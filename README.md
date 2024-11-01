@@ -44,29 +44,29 @@ ai_career_chatbot/ ├── app/ │ ├── templates/ │ │ └── ind
    git clone https://github.com/yourusername/ai_career_chatbot.git
    cd ai_career_chatbot
 
-Create a Virtual Environment
+2. **Create a Virtual Environment**
+
+``bash
+`python -m venv myenv`
+`source myenv/bin/activate`  # On Windows, use `myenv\Scripts\activate`
+
+3.**Install Dependencies**
 
 bash
 Copy code
-python -m venv myenv
-source myenv/bin/activate  # On Windows, use `myenv\Scripts\activate`
-Install Dependencies
+`pip install -r requirements.txt`
+4. **Train the Model (Optional)**
+
+To train your own intent classification model, run `train_model.py` in the nlp/ directory:
 
 bash
 Copy code
-pip install -r requirements.txt
-Train the Model (Optional)
-
-To train your own intent classification model, run train_model.py in the nlp/ directory:
-
-bash
-Copy code
-python nlp/train_model.py
+`python nlp/train_model.py`
 Run the Application
 
 bash
 Copy code
-python app/main.py
+`python app/main.py`
 Access the Chatbot
 
 Open your browser and go to http://127.0.0.1:5000 to interact with the chatbot.
