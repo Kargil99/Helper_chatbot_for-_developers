@@ -20,7 +20,24 @@ An AI-powered chatbot that assists users in exploring career opportunities, choo
 - **Natural Language Processing**: Uses machine learning and NLP to understand user questions.
 
 ## Project Structure
-ai_career_chatbot/ ├── app/ │ ├── templates/ │ │ └── index.html │ ├── static/ │ │ ├── styles.css │ │ └── script.js │ ├── main.py ├── models/ │ ├── my_model.keras │ └── tokenizer.pickle ├── nlp/ │ ├── intent_model.py │ ├── nlp_model.py │ └── train_model.py ├── data/ │ └── intents.json └── README.md
+ai_career_chatbot/ 
+├── app/ 
+│ ├── templates/ 
+│ │ └── index.html 
+│ ├── static/ │ 
+│ ├── styles.css 
+│ │── script.js │ 
+├── main.py 
+├── models/
+│ ├── my_model.keras
+│ └── tokenizer.pickle
+├── nlp/
+│ ├── intent_model.py
+│ ├── nlp_model.py
+│ └── train_model.py
+├── data/
+│ └── intents.json
+└── README.md
 
 
 - `app/`: Contains the Flask application files, including HTML templates and static assets.
